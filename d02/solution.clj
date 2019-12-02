@@ -46,4 +46,3 @@
 
 (print "2b: ")
 (print (sol_b 19690720))
-(println "")
