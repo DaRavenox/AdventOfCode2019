@@ -1,7 +1,6 @@
 (require '[clojure.string :as str])
-(def read_input (map read-string (str/split (slurp "input") #"," )))
+(def read_input (map read-string (str/split (slurp "input") #",")))
 (def input (zipmap (range (count read_input)) read_input))
-
 
 (defn sol_a [noun verb]
   (def funcmap {1 +, 2 *})
@@ -21,8 +20,6 @@
 
 
 ; This is not clojurelike, hence UGLY.
-
-
 (defn sol_b_non_clojurelike [result]
   (doseq [a (range 100)
           b (range 100)]
