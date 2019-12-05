@@ -26,5 +26,6 @@
 (print "3a: ")
 (println (sol_a read_input))
 
+(defn steps [expanded intr] (keep-indexed #(when (=  % intr)) expanded))
 
 
